@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://miro.medium.com/v2/resize:fit:1400/1*6Jp3vJWe7VFlFHZ9WhSJng.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Header Styles */
+header {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px; 
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    gap: 10px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: orange;
+}
+
+/* Search Results */
+.search-results {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+table th {
+    background: yellow;
+    color: black;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: auto;
+}
+
+/* About Page Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 30px;
+}
+
+.about-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: yellow;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.6);
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    font-size: 18px;
+    padding: 8px 0;
+    text-align: left;
+    color: white;
+}
+
+.about-content ul li::before {
+    content: "✔ ";
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Events Page Section */
+.events-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 30px;
+}
+
+.events-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.events-content h1 {
+    font-size: 36px;
+    color: yellow;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.6);
+}
+
+.events-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 8px 0;
+}
+
+/* Form Page Styling */
+.profile-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.profile-container label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #ddd;
+}
+
+.profile-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.profile-container button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+.profile-container button:hover {
+    background: orange;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.6);
+}
+
+.profile-container p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.register-link a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    color: orange;
+    text-decoration: underline;
+}

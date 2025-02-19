@@ -1,0 +1,123 @@
+/* Issue Book Form Styling */
+.issue-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.issue-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.6);
+}
+
+/* Form Layout */
+.issue-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Label and Input Row */
+.issue-container .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Labels */
+.issue-container label {
+    font-weight: bold;
+    width: 30%;
+    color: #ddd;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Inputs & Select Dropdowns */
+.issue-container select,
+.issue-container input {
+    width: 65%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Change calendar icon color */
+.issue-container input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverts the color to white */
+    cursor: pointer;
+}
+
+/* Ensure the date input remains visible */
+.issue-container input[type="date"] {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid yellow;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Focus Effect */
+.issue-container input[type="date"]:focus {
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 8px orange;
+}
+
+/* Dropdown Fix for Visibility */
+.issue-container select {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+}
+
+.issue-container select option {
+    background-color: black;
+    color: white;
+}
+
+/* Focus Effect */
+.issue-container select:focus,
+.issue-container input:focus {
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 8px orange;
+}
+
+/* Submit Button */
+.issue-container button {
+    width: 200px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+.issue-container button:hover {
+    background: orange;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.6);
+}

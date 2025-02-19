@@ -1,0 +1,550 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('https://media.gettyimages.com/id/1360787412/photo/bookshelves-with-lots-of-books.jpg?s=612x612&w=0&k=20&c=k7hptavZjxGsIcy3bah3axBht9i0I07wvL9ezocFIBo=') no-repeat center center/cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+header {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 8px;
+}
+
+.dropdown-menu a:hover {
+    background: yellow;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+} 
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    gap: 10px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: orange;
+}
+
+/* Center the search results container */
+.search-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure the table is properly aligned */
+.search-results table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Improve table styling */
+.search-results th, .search-results td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.search-results th {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.search-results tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure action buttons are aligned */
+.search-results .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Improve button styling */
+.search-results .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    border: none;
+}
+
+/* Action Button Colors */
+.issue { background: #3498db; color: white; }
+.return { background: #2ecc71; color: white; }
+.delete { background: #e74c3c; color: white; }
+
+/* Hover Effects */
+.issue:hover { background: #2980b9; }
+.return:hover { background: #27ae60; }
+.delete:hover { background: #c0392b; }
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+table th {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Manage Books Section - Properly Centered */
+.manage-books-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure the table inside Manage Books is centered */
+.manage-books-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Table Styling for Manage Books */
+.manage-books-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.manage-books-table th, .manage-books-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.manage-books-table th {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.manage-books-table tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* General button styling */
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    border: none;
+}
+
+/* Edit Button */
+.action-btn.edit {
+    background: #3498db;
+    color: white;
+}
+
+.action-btn.edit:hover {
+    background: #2980b9;
+}
+
+/* Delete Button */
+.action-btn.delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.action-btn.delete:hover {
+    background: #c0392b;
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown .dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown .dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: yellow;
+    color: black;
+}
+
+/* Show Dropdown when active */
+.dropdown.active .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Approve Students Section */
+.content-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+table th {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Action Button */
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.approve {
+    background: #2ecc71;
+    color: white;
+}
+
+.approve:hover {
+    background: #27ae60;
+}
+
+/* No Data Message */
+.no-data {
+    font-size: 18px;
+    margin-top: 20px;
+    color: lightgray;
+}
+
+/* Form Page styling */
+.profile-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.profile-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.6);
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-container label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #ddd;
+}
+
+.profile-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+.profile-container input:focus {
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 8px orange;
+}
+
+.profile-container button {
+    width: auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.profile-container button:hover {
+    background: orange;
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.6);
+}
+
+/* Student Search Results */
+.student-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Student History Table */
+.student-history {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.student-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-history th, .student-history td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.student-history th {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.student-history tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Return Button Styling */
+.return-btn {
+    background: #2ecc71;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.return-btn:hover {
+    background: #27ae60;
+}
