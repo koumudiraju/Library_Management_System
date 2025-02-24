@@ -67,7 +67,7 @@ The project is built in PHP and requires a local server environment like:
 
 ## 📩 Need Help?
 If you have any questions, feel free to reach out:
-📧 **Email**: sjahnavi369@gmail.com
+📧 **Email**: u1472261@utah.edu
 
 ---
 
